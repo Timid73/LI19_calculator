@@ -12,6 +12,7 @@ public class Calculator {
     public Calculator() {
         operations = new HashMap<String, Operation>();
         operations.put(PlusOperation.SYMBOL, new PlusOperation());
+        operations.put(MaxOperation.SYMBOL, new MaxOperation());
     }
 
     public int executeOperation(int a, String symbol, int b) {
