@@ -8,6 +8,6 @@ public class SqrtOperation implements Operation {
         if(b == 0) {
             throw new ArithmeticException();
         }
-        return (int)Math.pow(a, 1/b);
+        return (int)Math.pow(a, 1/(double)b);
     }
 }
