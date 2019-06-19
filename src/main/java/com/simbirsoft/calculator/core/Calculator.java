@@ -13,6 +13,7 @@ public class Calculator {
         operations = new HashMap<String, Operation>();
         operations.put(PlusOperation.SYMBOL, new PlusOperation());
         operations.put(DivideOperation.SYMBOL, new DivideOperation());
+        operations.put(SqrtOperation.SYMBOL, new SqrtOperation());
     }
 
     public int executeOperation(int a, String symbol, int b) {
