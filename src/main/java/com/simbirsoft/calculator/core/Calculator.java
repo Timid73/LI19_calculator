@@ -12,6 +12,8 @@ public class Calculator {
     public Calculator() {
         operations = new HashMap<String, Operation>();
         operations.put(PlusOperation.SYMBOL, new PlusOperation());
+        operations.put(PowOperation.SYMBOL, new PowOperation());
+        operations.put(CtgOperation.SYMBOL, new CtgOperation());
     }
 
     public int executeOperation(int a, String symbol, int b) {
