@@ -13,6 +13,8 @@ public class Calculator {
         operations = new HashMap<String, Operation>();
         operations.put(PlusOperation.SYMBOL, new PlusOperation());
         operations.put(MaxOperation.SYMBOL, new MaxOperation());
+        operations.put(MultiplyOperation.SYMBOL, new MultiplyOperation());
+        operations.put(FactorialOperation.SYMBOL, new FactorialOperation());
         single_operations = new HashMap<String, SingleOperations>();
         single_operations.put(SinOperation.SYMBOL, new SinOperation());
     }
