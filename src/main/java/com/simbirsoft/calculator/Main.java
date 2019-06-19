@@ -8,6 +8,10 @@ public class Main {
         Calculator testCalc = new Calculator();
         System.out.println(testCalc.executeOperation(2, "+", 3));
         System.out.println(testCalc.executeOperation(2, "-", 3));
-        //TODO
+        try {
+            System.out.println(testCalc.executeOperation(2, "/", 0));
+        } catch (ArithmeticException e) {
+            System.out.println("Деление на ноль невозможно");
+        }
     }
 }
