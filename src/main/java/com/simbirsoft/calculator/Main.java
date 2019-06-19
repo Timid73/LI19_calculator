@@ -8,6 +8,7 @@ public class Main {
         Calculator testCalc = new Calculator();
         System.out.println(testCalc.executeOperation(2, "+", 3));
         System.out.println(testCalc.executeOperation(2, "max", 3));
+        System.out.println(testCalc.executeOperation(2.0000, "sin"));
 
         //TODO
     }
